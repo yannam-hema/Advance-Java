@@ -7,8 +7,8 @@
 - File class and Built-in methods in File class
   
 **Serialization and Deserialization**
-  -Object OutputStream , Object Input Stream
-  -transient Keyword
-  -Serial Version UID
+-Object OutputStream , Object Input Stream
+-transient Keyword
+-Serial Version UID
   
   
