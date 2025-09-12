@@ -72,6 +72,7 @@ public class FileClass {
 		System.out.println(f2.lastModified());//Returns Time of File Last Modified
 		
 		System.out.println(f2.length());//Return the Length of the File
+		System.out.println(f2);
 		
 	}
 
