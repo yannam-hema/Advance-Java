@@ -9,6 +9,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+// Two way communication
 public class ServerSimpleTramissionMode {
 public static void main(String[] args) throws IOException {
 	ServerSocket listener = new ServerSocket(4000);
