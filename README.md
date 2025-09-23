@@ -10,5 +10,15 @@
 - Object OutputStream , Object Input Stream
 - transient Keyword
 - Serial Version UID
+
+### JDBC Connection
+- Load the driver
+- Establish the conection
+- prepare the sql query
+- convert sql query into java based statement
+- capture the results
+- close all the active connections
+
+
   
   
