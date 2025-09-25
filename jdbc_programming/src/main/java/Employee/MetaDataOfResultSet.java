@@ -28,6 +28,7 @@ public class MetaDataOfResultSet {
 				statement=con.createStatement();
 				res=statement.executeQuery(sql);
 				ResultSetMetaData metaData = res.getMetaData();
+				System.out.println(metaData);
 				int colCount=metaData.getColumnCount();
 				System.out.println("column count : "+colCount);
 				for(int i=1;i<=colCount;i++) {

@@ -30,22 +30,26 @@ public static void main(String[] args) throws SQLException {
 			System.out.println("Connection established");
             //creating sql query
 			//To get the data using salary
-			System.out.println("enter the id:");
-			int salary=sc.nextInt();
+			System.out.println("enter the salary:");
+			int sal=sc.nextInt();
 			//using company name
-			System.out.println("enter the name of the person:");
-			String company=sc.next();
-			String sql="select * from employeetable where salary";
+			System.out.println("enter the name of the company:");
+			String com=sc.next();
+			String sql="select * from employeetable where salary >= ? and company =?";
 			ps=con.prepareStatement(sql);
-			ps.setInt(1, salary);
-			ps.setString(1, company);
+			ps.setInt(1, sal);
+			ps.setString(2, com);
 			res=ps.executeQuery();
-			
+			if(res.next()==false) {
+				System.out.println("No! results found");
+			}
 			while(res.next()==true) {
 				System.out.println(res.getInt(1));
 				System.out.println(res.getString(2));
 				System.out.println(res.getString(3));
 				System.out.println(res.getInt(4));
+				System.out.println(res.getInt(5));
+				System.out.println(res.getString(6));
 				System.out.println("-----------");
 			}
 			
