@@ -43,7 +43,6 @@ public void Operation(int input) throws SQLException {
 		System.out.println("Enter the Name :");
 		String name=sc.next();
 		ps.setString(2,name);
-		
 		System.out.println("Enter the School :");
 		String school=sc.next();
 		ps.setString(3,school);
