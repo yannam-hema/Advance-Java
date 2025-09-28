@@ -18,6 +18,13 @@
 - convert sql query into java based statement
 - capture the results
 - close all the active connections
+### JDBC Topics
+- Statement Interface : createStatement() (We use this when we don't take input from the user)
+- Prepared Statement  : prepareStatement() (We use this when we wannatake input fro the user for the sql query)
+- executeQuery()      : DQL
+- executeUpdate()     : DDL ,DML
+- ResultSet           : To store results of the sql (DQL) query
+- Transation Managemet , Batch Commits
 
 
   
