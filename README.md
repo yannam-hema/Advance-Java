@@ -16,6 +16,7 @@
 - A request for connection will be sent to the server
 -  Data to be transmitted is collected output stream which is associated with Data output stream is created
 -  The data transmitted on to the stream
+  
 **Server**
 - Gets the connect Request from client
 - Listner will accept the request & redirect it to another socket
