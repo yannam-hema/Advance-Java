@@ -10,7 +10,18 @@
 - Object OutputStream , Object Input Stream
 - transient Keyword
 - Serial Version UID
-
+### Socket Based Programming
+**Client**
+- A client socket gets created
+- A request for connection will be sent to the server
+-  Data to be transmitted is collected output stream which is associated with Data output stream is created
+-  The data transmitted on to the stream
+**Server**
+- Gets the connect Request from client
+- Listner will accept the request & redirect it to another socket
+- Input stream which is associated with Data Input Stream is created
+- It will accept the data from the streams
+- The data gets collect on the Server
 ### JDBC Connection
 - Load the driver
 - Establish the conection
